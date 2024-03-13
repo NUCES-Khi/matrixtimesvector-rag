@@ -3,9 +3,9 @@
 ## Team Members
 |std_id|Name|
 |--------|-|
-|k20-1234|Amjad Sajid|
-|k20-4321|Majid Sajid|
-|k20-2143|Sajjaad Sajid|
+|k21-3069|Rija Anwar|
+|k21-3115|Ghazanfar Adnan|
+|k21-3052|Mohamed Abbas|
 
 ## Assingment 1 ##
 Status: **In progress**
