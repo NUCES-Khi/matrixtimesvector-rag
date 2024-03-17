@@ -7,7 +7,7 @@ Abbas Altaf 21K-3052
 ![image](https://github.com/NUCES-Khi/matrixtimesvector-rag/assets/71560374/e1af3ba7-6e20-487f-a877-5fb48499a7c2)
 ![image](https://github.com/NUCES-Khi/matrixtimesvector-rag/assets/71560374/08b99c57-747b-48ea-88d3-6aec64f7d5e8)
 ![image](https://github.com/NUCES-Khi/matrixtimesvector-rag/assets/71560374/19ff826a-8a48-46a1-b1e5-9d89163406e1)
-
+We also created another script called avg.sh to find the averages and generate graphs in google sheets.
 ## Results and Analysis
 After implementing the codes and conducting thorough evaluations, we have gained insights into the performance of various matrix-vector multiplication algorithms for different input sizes. Here's a general analysis based on our findings:
 
@@ -20,6 +20,8 @@ MPI Naive Algorithm: The MPI naive algorithm parallelizes the computation across
 OpenMP Tiled Algorithm: The OpenMP tiled algorithm divides the matrix into smaller tiles to reduce cache contention and enhance data locality. It performs well on multicore CPUs for medium to large-sized matrices, as it maximizes cache utilization and minimizes memory access latency. However, the performance gain may plateau for very large matrices due to memory bandwidth limitations.
 
 MPI Tiled Algorithm: The MPI tiled algorithm combines the benefits of MPI parallelization with tiling to achieve scalability across distributed-memory systems. It is suitable for very large matrices where the computation needs to be distributed across multiple nodes efficiently. However, it may exhibit higher communication overhead compared to the MPI naive algorithm due to additional data exchanges between nodes.
+![image](https://github.com/NUCES-Khi/matrixtimesvector-rag/assets/71560374/ad6a471d-3e54-438f-a74f-cc4177c56ecc)
+![image](https://github.com/NUCES-Khi/matrixtimesvector-rag/assets/71560374/cbd718cd-79ca-4fff-841a-38c6da70f320)
 
 ## Major Problems Encountered
 1. Memory Allocation Errors: At the beginning of our implementation, we encountered memory allocation errors when trying to dynamically allocate memory for matrices and vectors. Some of our memory allocation calls were returning NULL, indicating that memory allocation failed.
